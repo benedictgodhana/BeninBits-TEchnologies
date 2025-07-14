@@ -203,15 +203,15 @@
 </head>
 <body>
     <!-- Backdrop -->
-    <div id="menuBackdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 menu-backdrop hidden lg:hidden"></div>
+    <div id="menuBackdrop" class="fixed inset-0 z-40 hidden bg-black bg-opacity-50 menu-backdrop lg:hidden"></div>
 
-    <nav class="fixed w-full top-0 z-50 nav-bg">
+    <nav class="fixed top-0 z-50 w-full nav-bg">
         <div style="max-width: 1280px; margin: 0 auto; padding: 0 1rem;">
             <div style="display: flex; justify-content: space-between; height: 5rem; align-items: center;">
                 <!-- Logo -->
                 <div style="display: flex; align-items: center; gap: 0.75rem;">
                     <a href="#" style="display: flex; align-items: center; text-decoration: none;">
-                    <img src="/images/8b3b53bb-7cd3-479f-8434-9991e2d0cffa.png" alt="BENINBITS Logo" class="logo-image mr-4" style="height: 130px;">
+                    <img src="/images/8b3b53bb-7cd3-479f-8434-9991e2d0cffa.png" alt="BENINBITS Logo" class="mr-4 logo-image" style="height: 130px;">
                    <p style="font-size:1.5rem;font-weight:700;color:#90EE90;font-weight:bolder" >Benin<span class="logo-highlight">BITS</span></p>
                     </a>
                 </div>
@@ -251,23 +251,14 @@
                         </div>
                     </div>
 
-                    <a href="/pricing" class="nav-link hover-effect" style="padding: 0.5rem 0.75rem; font-size: 0.95rem;">
-                        Pricing
-                    </a>
 
-                    <a href="/blog" class="nav-link hover-effect" style="padding: 0.5rem 0.75rem; font-size: 0.95rem;">
-                        Blog
-                    </a>
 
 
 
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <a href="/login" class="login-button">
-                            <i class="fas fa-user" style="margin-right: 0.5rem;"></i>
-                            Login
-                        </a>
 
-                        
+
+
                         <a href="/contact" class="contact-button">
                             <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
                             Contact Us
@@ -286,7 +277,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobileMenu" class="mobile-menu fixed top-20 left-0 w-full" style="background-color: rgba(0, 0, 0, 0.95); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 50; max-height: 80vh; overflow-y: auto;">
+        <div id="mobileMenu" class="fixed left-0 w-full mobile-menu top-20" style="background-color: rgba(0, 0, 0, 0.95); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); z-index: 50; max-height: 80vh; overflow-y: auto;">
             <div style="padding: 1rem;">
                 <a href="/" class="nav-link" style="display: block; padding: 0.75rem 1rem; display: flex; align-items: center; border-radius: 0.25rem; transition: background-color 0.2s;">
                     <i class="fas fa-home" style="font-size: 1.1rem; margin-right: 0.75rem; color: var(--secondary);"></i> Home
@@ -325,21 +316,13 @@
                     </div>
                 </div>
 
-                <a href="/pricing" class="nav-link" style="display: block; padding: 0.75rem 1rem; display: flex; align-items: center; border-radius: 0.25rem; transition: background-color 0.2s;">
-                    <i class="fas fa-tags" style="font-size: 1.1rem; margin-right: 0.75rem; color: var(--secondary);"></i> Pricing
-                </a>
 
-                <a href="/blog" class="nav-link" style="display: block; padding: 0.75rem 1rem; display: flex; align-items: center; border-radius: 0.25rem; transition: background-color 0.2s;">
-                    <i class="fas fa-blog" style="font-size: 1.1rem; margin-right: 0.75rem; color: var(--secondary);"></i> Blog
-                </a>
+
 
                 <a href="/careers" class="nav-link" style="display: block; padding: 0.75rem 1rem; display: flex; align-items: center; border-radius: 0.25rem; transition: background-color 0.2s;">
                     <i class="fas fa-briefcase" style="font-size: 1.1rem; margin-right: 0.75rem; color: var(--secondary);"></i> Careers
                 </a>
 
-                <a href="/login" class="nav-link" style="display: block; padding: 0.75rem 1rem; display: flex; align-items: center; border-radius: 0.25rem; transition: background-color 0.2s;">
-                    <i class="fas fa-user" style="font-size: 1.1rem; margin-right: 0.75rem; color: var(--secondary);"></i> Login
-                </a>
 
                 <div style="padding-top: 1rem;">
                     <a href="/contact" class="contact-button" style="display: flex; justify-content: center; width: 100%;">
