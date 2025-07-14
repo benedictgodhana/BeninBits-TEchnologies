@@ -12,13 +12,19 @@ RUN a2enmod rewrite
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy Laravel files
+# Copy Laravel source code
 COPY . /var/www/html
+
+# Set document root to public/
+ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+
+# Update Apache config
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/000-default.conf
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Install Laravel dependencies
+# Install PHP dependencies
 RUN composer install --optimize-autoloader --no-dev
 
 # Set permissions
